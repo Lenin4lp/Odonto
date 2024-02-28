@@ -6,6 +6,9 @@ import "./index.css";
 import Home from "./pages/home/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+const LazyAboutUs = React.lazy(() => import("./pages/aboutUs/AboutUs.jsx"));
+const LazyServices = React.lazy(() => import("./pages/services/Services.jsx"));
+const LazyContact = React.lazy(() => import("./pages/contact/Contact.jsx"));
 
 const router = createBrowserRouter([
   {
@@ -15,6 +18,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/Nosotros",
+        element: <LazyAboutUs />,
+      },
+      {
+        path: "/Servicios",
+        element: <LazyServices />,
+      },
+      {
+        path: "/Contacto",
+        element: <LazyContact />,
       },
     ],
   },

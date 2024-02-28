@@ -37,16 +37,16 @@ function Home() {
   return (
     <div className=" font-sans h-fit block justify-center items-center">
       <div className=" bg-cover block  relative">
-        <div className=" h-[133px] w-screen"></div>
+        <div className=" h-[111px] lg:h-[133px] w-screen"></div>
         <div className=" h-screen z-10 w-screen absolute bg-white/10"></div>
         <div className=" h-[100px] z-10 bottom-0 w-screen absolute bg-gradient-to-b from-[#dbdbdb] to-[#ffffff]"></div>
         <div className=" w-screen h-fit absolute bottom-[60px]">
           <div className=" flex justify-center items-center">
             <div className=" grid grid-cols-3 gap-10">
-              <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 hover:cursor-pointer hover:scale-110 duration-300 p-5 rounded-full w-fit  bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
+              <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 hover:cursor-pointer hover:scale-110 duration-300 p-3 sm:p-5 rounded-full w-fit  bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
                 <div className=" flex justify-center items-center">
                   <svg
-                    className="h-[10px] md:h-[35px] "
+                    className="h-[25px] md:h-[35px] "
                     fill="#d9b430"
                     viewBox="0 0 32 32"
                     version="1.1"
@@ -66,10 +66,10 @@ function Home() {
                   </svg>
                 </div>
               </div>
-              <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-5 rounded-full hover:cursor-pointer hover:scale-110 duration-300 w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
+              <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 sm:p-5 rounded-full hover:cursor-pointer hover:scale-110 duration-300 w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
                 <div className=" flex justify-center items-center">
                   <svg
-                    className="h-[10px] md:h-[35px] "
+                    className="h-[25px] md:h-[35px] "
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -94,22 +94,22 @@ function Home() {
                   </svg>
                 </div>
               </div>
-              <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-5 hover:cursor-pointer hover:scale-110 duration-300 rounded-full w-fit  bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
+              <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 sm:p-5 hover:cursor-pointer hover:scale-110 duration-300 rounded-full w-fit  bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
                 <svg
-                  className="h-[10px] md:h-[35px] "
+                  className="h-[25px] md:h-[35px] "
                   fill="#d9b430"
                   version="1.1"
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                   viewBox="-143 145 512 512"
-                  xml:space="preserve"
+                  xmlSpace="preserve"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
@@ -120,22 +120,24 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" absolute top-[130px] overflow-hidden m-20 w-screen left-0 flex z-20 justify-start items-start">
+        <div className=" absolute top-[130px] overflow-hidden mx-5 m-10 md:m-14 md:mx-14 lg:m-20 lg:mx-20 w-screen left-0 flex z-20 justify-start items-start">
           <div className=" grid grid-cols-3 ">
             <div className=" block col-span-2">
-              <h1 className=" text-xl text-white">Tu sonrisa,</h1>
-              <h1 className=" text-xl text-[#d9b430] font-semibold">
+              <h1 className=" text-base lg:text-xl text-white">Tu sonrisa,</h1>
+              <h1 className=" text-base lg:text-xl text-[#d9b430] font-semibold">
                 nuestra especialidad
               </h1>
-              <h1 className=" pt-10 font-bold text-3xl text-white">
+              <h1 className=" pt-10 font-bold text-xl sm:text-2xl lg:text-3xl text-white">
                 Descubre la <span className=" text-[#d9b430]">magia</span>
               </h1>
-              <h1 className=" font-bold text-3xl text-white">
+              <h1 className=" font-bold text-xl sm:text-2xl lg:text-3xl text-white">
                 detrás de una <span className=" text-[#d9b430]">sonrisa</span>
               </h1>
-              <h1 className=" text-7xl font-black text-[#d9b430]">SALUDABLE</h1>
-              <div className=" flex justify-center items-center">
-                <button className=" my-10 p-3 rounded-xl hover:bg-[#e4cc54] duration-300 bg-[#d9b430]">
+              <h1 className=" text-4xl sm:text-6xl lg:text-7xl font-black text-[#d9b430]">
+                SALUDABLE
+              </h1>
+              <div className=" flex justify-start sm:justify-center items-center">
+                <button className=" my-10 text-sm lg:text-base p-3 rounded-xl hover:bg-[#e4cc54] duration-300 bg-[#d9b430]">
                   Agenda una cita ya!
                 </button>
               </div>
@@ -154,16 +156,16 @@ function Home() {
         </div>
       </div>
       <div className=" h-fit block">
-        <div className=" my-5 mx-10">
+        <div className="  sm:my-5 mx-5 sm:mx-10">
           <div className=" block">
             <div className=" mb-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
-              <div className=" grid grid-cols-6">
+              <div className=" grid grid-cols-1 md:grid-cols-6">
                 <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
                   <div className=" m-5 opacity-50">
                     <img
-                      className=" h-[200px] w-auto object-contain"
+                      className=" h-[120px] sm:h-[200px] w-auto object-contain"
                       src="https://softdeveral.com/odonto/solologo.jpeg"
                       alt=""
                     />
@@ -171,10 +173,10 @@ function Home() {
                 </div>
                 <div className=" col-span-4 flex justify-start items-center">
                   <div className=" m-5 block">
-                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
+                    <h1 className=" text-left text-base font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
                       Nuestra visión
                     </h1>
-                    <h1 className=" text-justify text-base my-4">
+                    <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
                       En Centro Oral nos comprometemos a brindar a nuestros
                       pacientes una atención odontológica integral y de calidad,
                       centrada en la excelencia clínica y el bienestar del
@@ -191,13 +193,13 @@ function Home() {
               </div>
             </div>
             <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
-              <div className=" grid grid-cols-6">
+              <div className=" grid grid-cols-1 md:grid-cols-6">
                 <div className=" col-span-4 flex justify-center items-center relative">
                   <div className=" m-5 block">
                     <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
                       Tecnología de punta
                     </h1>
-                    <h1 className=" text-justify text-base my-4">
+                    <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
                       En Centro Oral, nos mantenemos a la vanguardia de la
                       odontología mediante la implementación de tecnologías de
                       última generación. Nuestro compromiso con la excelencia
@@ -207,13 +209,13 @@ function Home() {
                       pacientes.
                     </h1>
                     <div className=" flex justify-center items-center my-2">
-                      <button className=" p-2 rounded-lg border border-white bg-[#d9b430] hover:border-black hover:bg-[#e4cc54] duration-300">
+                      <button className=" p-2 rounded-lg border border-white bg-[#d9b430] text-sm lg:text-base hover:border-black hover:bg-[#e4cc54] duration-300">
                         Nuestros servicios
                       </button>
                     </div>
                   </div>
                 </div>
-                <div className=" col-span-2 flex justify-center items-center relative">
+                <div className=" col-span-2 bg-black flex justify-center items-center relative">
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
                   <div className="">
@@ -227,8 +229,8 @@ function Home() {
               </div>
             </div>
             <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
-              <div className=" grid grid-cols-6">
-                <div className=" col-span-2 flex justify-center items-center relative">
+              <div className=" grid grid-cols-1 md:grid-cols-6">
+                <div className=" col-span-2 bg-black flex justify-center items-center relative">
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
                   <div className="">
@@ -244,7 +246,7 @@ function Home() {
                     <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
                       Queremos ser la causa de tu mejor sonrisa
                     </h1>
-                    <h1 className=" text-justify text-base my-4">
+                    <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
                       La sonrisa es parte crucial de tu salud y bienestar. Nos
                       esforzamos por ofrecer tratamientos odontológicos
                       avanzados que no solo mejoren la estética de tu sonrisa,
@@ -255,7 +257,7 @@ function Home() {
                       calidad.
                     </h1>
                     <div className=" flex justify-center items-center my-2">
-                      <button className=" p-2 bg-[#d9b430] hover:bg-[#e4cc54] duration-300 rounded-lg border hover:border-black border-white">
+                      <button className=" p-2 bg-[#d9b430] hover:bg-[#e4cc54] duration-300 rounded-lg text-sm lg:text-base border hover:border-black border-white">
                         Visítanos hoy
                       </button>
                     </div>
@@ -265,25 +267,27 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" mt-20 bg-[url('https://softdeveral.com/odonto/background.webp')] border-y-[2px] border-[#d9b430] bg-cover w-full h-fit block">
-          <div className=" flex justify-start items-center">
-            <h1 className=" font-semibold text-xl rounded-full p-2 bg-black m-10 text-white">
+        <div className=" mt-14 md:mt-20 bg-[url('https://softdeveral.com/odonto/background.webp')] border-y-[2px] border-[#d9b430] bg-cover w-full h-fit block">
+          <div className=" flex justify-center md:justify-start items-center">
+            <h1 className=" font-semibold text-base md:text-lg lg:text-xl rounded-full p-2 bg-black m-10 text-white">
               Nuestros Servicios
             </h1>
           </div>
           <div className=" my-5 block">
             {services.map((service, index) => (
-              <div key={index} className=" block">
-                <h1 className=" font-semibold text-base rounded-full p-2 w-fit bg-black mx-10 text-white">
-                  {service.type}
-                </h1>
-                <div className=" grid grid-cols-5 h-fit">
+              <div key={index} className=" my-4 block">
+                <div className=" flex justify-center sm:justify-start items-center">
+                  <h1 className=" font-semibold text-base rounded-full p-2 w-fit bg-black mx-10 text-white">
+                    {service.type}
+                  </h1>
+                </div>
+                <div className=" gap-y-0 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 h-fit">
                   {service.includedServices.map((includedService, index) => (
                     <div
                       key={index}
-                      className=" h-fit group flex justify-center items-center relative"
+                      className=" h-fit group flex justify-start items-center p-2 relative"
                     >
-                      <h1 className=" font-semibold text-sm text-center rounded-full p-3 w-fit border border-black hover:scale-[1.05] hover:border-[#d9b430] hover:cursor-pointer duration-500 bg-white m-10 text-black">
+                      <h1 className=" font-semibold text-[11px] md:text-[12px] lg:text-sm text-center rounded-full p-3 w-full border border-black hover:scale-[1.05] hover:border-[#d9b430] hover:cursor-pointer duration-500 bg-white my-3 md:my-4 lg:my-7 mx-5 md:mx-10 text-black">
                         {includedService}
                       </h1>
                     </div>
@@ -295,10 +299,10 @@ function Home() {
         </div>
         <div className=" w-screen bg-black h-fit block">
           <div className=" flex justify-center items-center">
-            <div className=" my-10 grid grid-cols-3 w-full">
+            <div className=" my-10 grid grid-cols-1 sm:grid-cols-3 w-full">
               <div className=" col-span-1 flex justify-center items-center">
                 <svg
-                  className=" fill-white h-[100px]"
+                  className=" fill-white h-[60px] sm:h-[100px]"
                   version="1.1"
                   id="_x32_"
                   xmlns="http://www.w3.org/2000/svg"
@@ -326,22 +330,28 @@ function Home() {
                   </g>
                 </svg>
               </div>
-              <div className=" col-span-1 flex justify-center items-center">
+              <div className=" col-span-1 my-5 sm:my-0 flex justify-center items-center">
                 <div className=" block text-center text-white">
-                  <h1 className=" text-4xl font-semibold">NO TE PIERDAS UN</h1>
-                  <h1 className=" text-6xl text-[#d9b430] font-bold">
+                  <h1 className=" text-xl sm:text-3xl lg:text-4xl font-semibold">
+                    NO TE PIERDAS UN
+                  </h1>
+                  <h1 className=" text-4xl sm:text-5xl lg:text-6xl text-[#d9b430] font-bold">
                     DESCUENTO
                   </h1>
-                  <h1 className=" text-3xl font-semibold">DE HASTA</h1>
-                  <h1 className=" text-8xl text-[#d9b430]	 font-bold">15%</h1>
-                  <h1 className=" text-2xl font-bold">
+                  <h1 className=" text-lg sm:text-2xl lg:text-3xl font-semibold">
+                    DE HASTA
+                  </h1>
+                  <h1 className=" text-7xl lg:text-8xl text-[#d9b430]	 font-bold">
+                    15%
+                  </h1>
+                  <h1 className=" text-base sm:text-xl lg:text-2xl font-bold">
                     EN TU PRIMERA CONSULTA
                   </h1>
                 </div>
               </div>
               <div className=" col-span-1 flex justify-center items-center">
                 <svg
-                  className=" fill-white h-[100px]"
+                  className=" fill-white h-[60px] sm:h-[100px]"
                   version="1.1"
                   id="_x32_"
                   xmlns="http://www.w3.org/2000/svg"

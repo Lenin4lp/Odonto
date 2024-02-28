@@ -2,26 +2,26 @@ import React, { useState } from "react";
 function Navbar() {
   let [open, setOpen] = useState(false);
   let Links = [
-    { name: "Inicio", link: "/home" },
-    { name: "Nosotros", link: "/perfil" },
-    { name: "Servicios", link: "/cursos" },
-    { name: "Contacto", link: "/biblioteca" },
+    { name: "Inicio", link: "/" },
+    { name: "Nosotros", link: "/Nosotros" },
+    { name: "Servicios", link: "/Servicios" },
+    { name: "Contacto", link: "/Contacto" },
   ];
   return (
     <div className="font-sans block shadow-md w-screen fixed top-0 z-50">
-      <div className=" h-[30px] flex justify-start bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] items-center">
-        <div className=" p-3 text-sm">
+      <div className=" h-[25px] lg:h-[30px] flex justify-start bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] items-center">
+        <div className=" p-2 lg:p-3 text-[10px] sm:text-[13px] md:text-sm">
           Lunes a Viernes: 9 AM - 19 PM / Sábados: 09 AM - 14 PM
         </div>
       </div>
-      <div className="md:flex h-[100px] items-center   justify-between bg-[#ffffff] py-4 md:px-10 px-7">
+      <div className="md:flex h-[85px] lg:h-[100px] items-center   justify-between bg-[#ffffff] py-4 md:px-10 px-7">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-white w-fit"
         >
           <span className="text-3xl text-indigo-600 mr-1 pt-2"></span>
           <img
-            className=" h-[80px] w-auto object-contain"
+            className=" h-[60px] lg:h-[80px] w-auto object-contain"
             src="https://softdeveral.com/odonto/odontologo2.jpeg"
             alt=""
           />
@@ -29,18 +29,41 @@ function Navbar() {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-[50px] top-[68px] lg:top-[80px] cursor-pointer md:hidden"
         >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          <button className="flex items-center space-x-2 focus:outline-none">
+            <div className="w-6 flex items-center justify-center relative">
+              <span
+                className={`transform transition w-full h-px bg-current absolute ${
+                  open ? "translate-y-0 rotate-45" : "-translate-y-2"
+                }`}
+              ></span>
+
+              <span
+                className={`transform transition w-full h-px bg-current absolute ${
+                  open ? "opacity-0 translate-x-3" : "opacity-100"
+                }`}
+              ></span>
+
+              <span
+                className={`transform transition w-full h-px bg-current absolute ${
+                  open ? "translate-y-0 -rotate-45" : "translate-y-2"
+                }`}
+              ></span>
+            </div>
+          </button>
         </div>
 
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#ffffff] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-14 " : "top-[-490px]"
+            open ? "top-[100px] " : "top-[-490px]"
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-lg md:my-0 my-7">
+            <li
+              key={link.name}
+              className="md:ml-8 text-base lg:text-lg md:my-0 my-7"
+            >
               <a
                 relative="route"
                 href={link.link}
@@ -54,8 +77,8 @@ function Navbar() {
             onClick={() => logout()}
             className=" md:mx-10 p-2 rounded bg-gradient-to-br from-[#25D366] to-[#18793b] text-white hover:from-[#64d18c] hover:to-[#2da559] duration-300"
           >
-            <div className=" grid grid-cols-4">
-              <div className=" col-span-1">
+            <div className=" grid grid-cols-4 md:grid-cols-1 lg:grid-cols-4">
+              <div className=" flex justify-center col-span-1">
                 <svg
                   className=" h-[30px]"
                   fill="#ffffff"
@@ -75,7 +98,7 @@ function Navbar() {
                 </svg>
               </div>
               <div className=" col-span-3">
-                <div className=" flex justify-center mt-1 items-center">
+                <div className=" flex md:hidden lg:flex justify-center mt-1 items-center">
                   WhatsApp
                 </div>
               </div>
