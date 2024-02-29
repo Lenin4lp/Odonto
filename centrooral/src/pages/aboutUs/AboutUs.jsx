@@ -1,5 +1,6 @@
 import React from "react";
 import TitleBand from "../../components/TitleBand";
+import Profile from "../../components/Profile";
 
 function AboutUs() {
   return (
@@ -61,6 +62,26 @@ function AboutUs() {
                 </h1>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className=" h-fit w-screen block border-y-[2px] border-[#d9b430]">
+        <div className=" flex justify-start items-start">
+          <div className=" p-5 md:p-7 bg-[#d9b430]">
+            <h1 className=" text-lg sm:text-xl md:text-2xl text-white font-semibold">
+              Conoce a nuestro equipo
+            </h1>
+          </div>
+        </div>
+        <div className=" my-3 sm:my-5 md:my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
+          <div>
+            <Profile />
+          </div>
+          <div>
+            <Profile />
+          </div>
+          <div className=" col-span-1 sm:col-span-2 md:col-span-1">
+            <Profile />
           </div>
         </div>
       </div>
