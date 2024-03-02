@@ -35,6 +35,25 @@ function Services() {
             </div>
           </div>
         </div>
+        <div className=" h-fit w-screen bg-[#d9b430] bg-gradient-to-br from-[#d9b430] to-[#d1b758] flex justify-center items-center">
+          <div className=" block text-base md:text-lg font-bold text-black mx-5 my-10">
+            <div className=" flex justify-center items-center">
+              <h1 className=" text-center">
+                Pregúntanos acerca del servicio que requieras
+              </h1>
+            </div>
+            <div className=" flex justify-center items-center">
+              <h1 className=" text-center">
+                Y consigue la sonrisa que siempre soñaste!
+              </h1>
+            </div>
+            <div className=" flex justify-center items-center mt-6">
+              <button className=" text-base font-semibold border-[1px] hover:shadow-md hover:shadow-black duration-300 border-black rounded-lg p-3 bg-white">
+                <p>Consulta ya!</p>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
