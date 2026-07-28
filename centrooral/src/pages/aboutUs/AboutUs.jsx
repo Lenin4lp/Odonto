@@ -6,25 +6,18 @@ function AboutUs() {
   return (
     <div className=" font-sans h-fit block justify-center items-center">
       <div className=" bg-cover block  relative">
-        <div className=" h-[111px] lg:h-[133px] w-screen"></div>
+        <div className=" h-[111px] lg:h-[133px] bg-black w-screen"></div>
       </div>
       <TitleBand
         title="NOSOTROS"
         color="bg-[#e4cc54]/70"
         textColor="text-white"
-        image="bg-[url('https://softdeveral.com/odonto/us.webp')]"
       />
       <div className=" block">
         <div className=" grid grid-cols-1 md:grid-cols-4">
           <div className=" md:col-span-2 flex justify-center items-center bg-[url('https://softdeveral.com/odonto/nosotros.webp')] h-[170px] sm:h-[200px] md:h-screen bg-cover">
-            <div className=" h-full w-screen bg-black/90 relative">
-              <div className=" absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center">
-                <img
-                  className=" h-[115px] sm:h-[150px] lg:h-[200px] w-auto"
-                  src="https://softdeveral.com/odonto/logowhite.png"
-                  alt=""
-                />
-              </div>
+            <div className=" h-full w-screen flex justify-center items-center bg-black/90 relative">
+              <img className="  object-fill" src="consul.webp" alt="" />
             </div>
           </div>
           <div className=" md:col-span-2 flex justify-center items-center">

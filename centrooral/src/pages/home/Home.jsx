@@ -37,9 +37,7 @@ function Home() {
   return (
     <div className=" font-sans h-fit block justify-center items-center">
       <div className=" bg-cover block  relative">
-        <div className=" h-[111px] lg:h-[133px] w-screen"></div>
         <div className=" h-screen z-10 w-screen absolute bg-white/10"></div>
-        <div className=" h-[100px] z-10 bottom-0 w-screen absolute bg-gradient-to-b from-[#dbdbdb] to-[#ffffff]"></div>
         <div className=" w-screen h-fit absolute bottom-[60px]">
           <div className=" flex justify-center items-center">
             <div className=" grid grid-cols-3 gap-10">
@@ -146,17 +144,14 @@ function Home() {
           </div>
         </div>
         <div className="">
-          <video
+          <img
             className=" h-screen w-screen object-cover "
-            src="https://softdeveral.com/odonto/home_video.mp4"
-            autoPlay
-            loop
-            muted
-          ></video>
+            src="Fondoweb.webp"
+          ></img>
         </div>
       </div>
-      <div className=" h-fit block">
-        <div className="  sm:my-5 mx-5 sm:mx-10">
+      <div className=" h-fit bg-gradient-to-r from-[#000000] to-[#131313] block">
+        <div className="  py-5 px-5 sm:px-10">
           <div className=" block">
             <div className=" mb-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
               <div className=" grid grid-cols-1 md:grid-cols-6">
