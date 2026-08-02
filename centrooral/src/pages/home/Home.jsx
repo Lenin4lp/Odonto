@@ -122,20 +122,20 @@ function Home() {
           <div className=" grid grid-cols-3 ">
             <div className=" block col-span-2">
               <h1 className=" text-base lg:text-xl text-white">Tu sonrisa,</h1>
-              <h1 className=" text-base lg:text-xl text-[#d9b430] font-semibold">
+              <h1 className=" text-base lg:text-xl text-[#DFBB0B] font-semibold">
                 nuestra especialidad
               </h1>
               <h1 className=" pt-10 font-bold text-xl sm:text-2xl lg:text-3xl text-white">
-                Descubre la <span className=" text-[#d9b430]">magia</span>
+                Descubre la <span className=" text-[#DFBB0B]">magia</span>
               </h1>
               <h1 className=" font-bold text-xl sm:text-2xl lg:text-3xl text-white">
-                detrás de una <span className=" text-[#d9b430]">sonrisa</span>
+                detrás de una <span className=" text-[#DFBB0B]">sonrisa</span>
               </h1>
-              <h1 className=" text-4xl sm:text-6xl lg:text-7xl font-black text-[#d9b430]">
+              <h1 className=" text-4xl sm:text-6xl lg:text-7xl font-black text-[#DFBB0B]">
                 SALUDABLE
               </h1>
               <div className=" flex justify-start sm:justify-center items-center">
-                <button className=" my-10 text-sm lg:text-base p-3 rounded-xl hover:bg-[#e4cc54] duration-300 bg-[#d9b430]">
+                <button className=" my-10 text-sm lg:text-base p-3 rounded-xl hover:bg-[#e4cc54] duration-300 bg-[#DFBB0B]">
                   Agenda una cita ya!
                 </button>
               </div>
@@ -160,8 +160,8 @@ function Home() {
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
                   <div className=" m-5 opacity-50">
                     <img
-                      className=" h-[120px] sm:h-[200px] w-auto object-contain"
-                      src="https://softdeveral.com/odonto/solologo.jpeg"
+                      className=" rounded-lg h-[120px] sm:h-[200px] w-auto object-contain"
+                      src="consultorio.webp"
                       alt=""
                     />
                   </div>
@@ -210,13 +210,13 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className=" col-span-2 bg-black flex justify-center items-center relative">
+                <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
-                  <div className="">
+                  <div className=" m-5 opacity-80 ">
                     <img
-                      className=" h-full w-auto object-contain"
-                      src="https://softdeveral.com/odonto/tecnologia.webp"
+                      className=" h-[120px] sm:h-[200px] rounded-lg w-auto object-contain"
+                      src="exocad.webp"
                       alt=""
                     />
                   </div>
@@ -225,13 +225,13 @@ function Home() {
             </div>
             <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
               <div className=" grid grid-cols-1 md:grid-cols-6">
-                <div className=" col-span-2 bg-black flex justify-center items-center relative">
+                <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
                   <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
-                  <div className="">
+                  <div className=" m-5 opacity-80 ">
                     <img
-                      className=" h-full w-auto object-contain"
-                      src="https://softdeveral.com/odonto/smile.webp"
+                      className=" h-[120px] sm:h-[200px] rounded-lg w-auto object-contain"
+                      src="smile1.webp"
                       alt=""
                     />
                   </div>
