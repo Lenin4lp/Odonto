@@ -150,14 +150,46 @@ function Home() {
           ></img>
         </div>
       </div>
-      <div className=" h-fit bg-gradient-to-r from-[#000000] to-[#131313] block">
-        <div className="  py-5 px-5 sm:px-10">
+      <div className=" h-fit bg-gradient-to-b from-[#000000] to-[#272207] block">
+        <div className=" border-t-[1px] border-[#DFBB0B] p-5 px-5 sm:px-10">
           <div className=" block">
+            <div className="mb-7 mt-2 flex justify-center items-center grow w-full ">
+              <div className=" p-4 border-[#DFBB0B] rounded-full border-[1px] ">
+                <svg
+                  className=" fill-[#DFBB0B] h-[50px] "
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnXlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 407.504 407.504"
+                  xmlSpace="preserve"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <g>
+                      {" "}
+                      <path d="M376.328,45.601c-21.131-23.658-50.213-36.686-81.891-36.686c-24.766,0-51.477,14.735-70.994,25.501 c-7.105,3.922-16.821,9.284-19.693,9.637c-2.859-0.347-12.525-5.695-19.613-9.616C164.67,23.666,138.009,8.915,113.068,8.915 c-31.679,0-60.762,13.028-81.894,36.686C11.071,68.108,0,97.734,0,129.021c0,44.695,16.05,108.255,42.933,170.029 c11.96,27.484,24.691,51.233,36.816,68.68c14.432,20.766,26.817,30.859,37.864,30.859c4.902,0,13.878-2.079,18.914-16.007 c4.894-13.534,9.296-29.069,13.964-45.547c12.354-43.606,27.728-97.878,52.48-97.878h1.563c11.005,0,20.856,9.426,30.115,28.818 c9.172,19.209,16.145,44.752,22.898,69.485c4.463,16.351,8.68,31.792,13.416,45.085c4.934,13.842,13.809,15.912,18.666,15.915 c10.992-0.001,23.365-10.249,37.828-31.329c12.094-17.626,24.852-41.611,36.895-69.361c27.02-62.271,43.152-125.354,43.152-168.75 C407.504,97.733,396.432,68.107,376.328,45.601 M286.797,77.685c-0.254-0.017-25.844-1.242-49.139-7.411 c-10.504-2.781-22.924-8.369-22.924-10.027c0-1.614,13.494-9.471,16.748-11.267c17.924-9.888,42.469-23.43,62.955-23.43 c60.361,0,96.432,52.609,96.432,103.471c0,40.62-16.008,102.744-41.779,162.126c-11.457,26.404-24.012,50.047-35.35,66.572 c-13.082,19.067-21.547,24.61-24.111,24.105c-1.574-0.311-1.77-1.427-2.994-4.865c-4.531-12.712-8.668-27.863-13.047-43.904 c-6.938-25.41-14.109-51.687-23.928-72.25c-12.301-25.762-27.062-38.285-45.126-38.285h-1.563 c-17.401,0-31.821,12.423-44.081,37.978c-9.786,20.397-17.218,46.631-24.404,72.002c-4.58,16.165-8.905,31.436-13.602,44.424 c-1.037,2.867-1.357,4.739-3.271,5.029c-1.5,0.228-7.907-0.269-24.204-23.718c-11.346-16.325-23.855-39.702-35.223-65.824 C32.556,233.517,16.635,170.91,16.635,129.02c0-50.862,36.071-103.471,96.433-103.471c15.69,0,36.309,7.149,55.155,19.124 c2.764,1.757,6.656,4.748,10.42,7.642c1.502,1.155,2.982,2.292,4.36,3.329c4.418,3.309,10.388,7.636,17.398,11.763 c2.989,1.764,6.708,3.96,10.658,5.636c15.105,6.412,31.121,9.663,47.602,9.663c16.793,0,28.088-2.987,28.199-3.022 c0,0,2.527-0.668,2.447-1.325C289.227,77.702,286.797,77.685,286.797,77.685z"></path>{" "}
+                    </g>{" "}
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div className=" mb-7 mt-2 flex justify-center items-center grow w-full">
+              <h1 className=" text-base sm:text-lg lg:text-xl font-semibold text-white">
+                ~ Conoce más sobre nosotros ~
+              </h1>
+            </div>
             <div className=" mb-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
               <div className=" grid grid-cols-1 md:grid-cols-6">
                 <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
-                  <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
-                  <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
+                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] left-0"></div>
+                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] right-0"></div>
                   <div className=" m-5 opacity-50">
                     <img
                       className=" rounded-lg h-[120px] sm:h-[200px] w-auto object-contain"
@@ -187,11 +219,11 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
+            <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#DFBB0B]">
               <div className=" grid grid-cols-1 md:grid-cols-6">
                 <div className=" col-span-4 flex justify-center items-center relative">
                   <div className=" m-5 block">
-                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
+                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#DFBB0B]">
                       Tecnología de punta
                     </h1>
                     <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
@@ -204,15 +236,15 @@ function Home() {
                       pacientes.
                     </h1>
                     <div className=" flex justify-center items-center my-2">
-                      <button className=" p-2 rounded-lg border border-white bg-[#d9b430] text-sm lg:text-base hover:border-black hover:bg-[#e4cc54] duration-300">
+                      <button className=" p-2 rounded-lg border border-white bg-[#DFBB0B] text-sm lg:text-base hover:border-black hover:bg-[#e4cc54] duration-300">
                         Nuestros servicios
                       </button>
                     </div>
                   </div>
                 </div>
                 <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
-                  <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
-                  <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
+                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] left-0"></div>
+                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] right-0"></div>
                   <div className=" m-5 opacity-80 ">
                     <img
                       className=" h-[120px] sm:h-[200px] rounded-lg w-auto object-contain"
@@ -223,11 +255,11 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
+            <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#DFBB0B]">
               <div className=" grid grid-cols-1 md:grid-cols-6">
                 <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
-                  <div className=" absolute h-full w-[5px] bg-[#d9b430] left-0"></div>
-                  <div className=" absolute h-full w-[5px] bg-[#d9b430] right-0"></div>
+                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] left-0"></div>
+                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] right-0"></div>
                   <div className=" m-5 opacity-80 ">
                     <img
                       className=" h-[120px] sm:h-[200px] rounded-lg w-auto object-contain"
@@ -238,7 +270,7 @@ function Home() {
                 </div>
                 <div className=" col-span-4 flex justify-center items-center relative">
                   <div className=" m-5 block">
-                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
+                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#DFBB0B]">
                       Queremos ser la causa de tu mejor sonrisa
                     </h1>
                     <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
@@ -252,7 +284,7 @@ function Home() {
                       calidad.
                     </h1>
                     <div className=" flex justify-center items-center my-2">
-                      <button className=" p-2 bg-[#d9b430] hover:bg-[#e4cc54] duration-300 rounded-lg text-sm lg:text-base border hover:border-black border-white">
+                      <button className=" p-2 bg-[#DFBB0B] hover:bg-[#e4cc54] duration-300 rounded-lg text-sm lg:text-base border hover:border-black border-white">
                         Visítanos hoy
                       </button>
                     </div>
@@ -262,13 +294,13 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" mt-14 md:mt-20 bg-[url('https://softdeveral.com/odonto/background.webp')] border-y-[2px] border-[#d9b430] bg-cover w-full h-fit block">
-          <div className=" flex justify-center md:justify-start items-center">
+        <div className=" bg-white relative mt-14 md:mt-20  border-y-[2px] border-[#DFBB0B]  w-full h-fit block">
+          <div className=" z-10 flex justify-center md:justify-start items-center">
             <h1 className=" font-semibold text-base md:text-lg lg:text-xl rounded-full p-2 bg-black m-10 text-white">
               Nuestros Servicios
             </h1>
           </div>
-          <div className=" my-5 block">
+          <div className=" z-10 my-5 block">
             {services.map((service, index) => (
               <div key={index} className=" my-4 block">
                 <div className=" flex justify-center sm:justify-start items-center">
