@@ -44,8 +44,7 @@ function Home() {
               <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 hover:cursor-pointer hover:scale-110 duration-300 p-3 sm:p-5 rounded-full w-fit  bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
                 <div className=" flex justify-center items-center">
                   <svg
-                    className="h-[25px] md:h-[35px] "
-                    fill="#d9b430"
+                    className="h-[25px] fill-[#DFBB0B] md:h-[35px] "
                     viewBox="0 0 32 32"
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +85,7 @@ function Home() {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
-                        fill="#DFBB0B"
+                        className="fill-[#DFBB0B]"
                       />{" "}
                     </g>
                   </svg>
@@ -94,8 +93,7 @@ function Home() {
               </div>
               <div className=" shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 sm:p-5 hover:cursor-pointer hover:scale-110 duration-300 rounded-full w-fit  bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
                 <svg
-                  className="h-[25px] md:h-[35px] "
-                  fill="#d9b430"
+                  className="h-[25px] md:h-[35px] fill-[#DFBB0B] "
                   version="1.1"
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -150,13 +148,13 @@ function Home() {
           ></img>
         </div>
       </div>
-      <div className=" h-fit bg-gradient-to-b from-[#000000] to-[#272207] block">
+      <div className=" h-fit bg-gradient-to-b from-[#f5f5f5] to-[#DFBB0B] block">
         <div className=" border-t-[1px] border-[#DFBB0B] p-5 px-5 sm:px-10">
           <div className=" block">
             <div className="mb-7 mt-2 flex justify-center items-center grow w-full ">
               <div className=" p-4 border-[#DFBB0B] rounded-full border-[1px] ">
                 <svg
-                  className=" fill-[#DFBB0B] h-[50px] "
+                  className=" fill-[#DFBB0B] h-[30px] lg:h-[50px] "
                   version="1.1"
                   id="Capa_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -180,114 +178,81 @@ function Home() {
                 </svg>
               </div>
             </div>
-            <div className=" mb-7 mt-2 flex justify-center items-center grow w-full">
-              <h1 className=" text-base sm:text-lg lg:text-xl font-semibold text-white">
-                ~ Conoce más sobre nosotros ~
-              </h1>
-            </div>
-            <div className=" mb-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#d9b430]">
-              <div className=" grid grid-cols-1 md:grid-cols-6">
-                <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
-                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] left-0"></div>
-                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] right-0"></div>
-                  <div className=" m-5 opacity-50">
+            <div className=" flex justify-center items-center">
+              <div className=" w-full max-w-[1000px] grow grid h-fit shadow-lg hover:shadow-none duration-300 bg-white gap-5 grid-cols-3 rounded-lg p-3 ">
+                <div className=" border-[#DFBB0B] border-r-[2px]  grow w-full block p-3 ">
+                  <div className=" flex justify-center items-center  opacity-50">
                     <img
-                      className=" rounded-lg h-[120px] sm:h-[200px] w-auto object-contain"
+                      className=" rounded-lg h-[150px]  w-auto "
                       src="consultorio.webp"
                       alt=""
                     />
                   </div>
-                </div>
-                <div className=" col-span-4 flex justify-start items-center">
-                  <div className=" m-5 block">
-                    <h1 className=" text-left text-base font-semibold underline underline-offset-4 decoration-2 decoration-[#d9b430]">
+                  <div className=" my-2 flex justify-center items-center">
+                    <h1 className=" font-semibold text-sm lg:text-base  text-center">
                       Nuestra visión
                     </h1>
-                    <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
+                  </div>
+                  <div className=" flex justify-center items-center">
+                    <p className=" text-sm lg:text-base  text-justify">
+                      En Centroral nos comprometemos a brindar a nuestros
+                      pacientes una atención odontológica integral y de calidad,
+                      centrada en la excelencia clínica y el bienestar del
+                      paciente. Nuestro objetivo es mejorar la salud bucal de
+                      nuestros pacientes, ofreciendo tratamientos innovadores,
+                      personalizados y seguros, respaldados por un equipo de
+                      profesionales altamente capacitados.
+                    </p>
+                  </div>
+                </div>
+                <div className="  grow w-full block p-3 ">
+                  <div className=" flex justify-center items-center  opacity-50">
+                    <img
+                      className=" rounded-lg h-[150px]  w-auto "
+                      src="consultorio.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div className=" my-2 flex justify-center items-center">
+                    <h1 className=" font-semibold text-sm lg:text-base  text-center">
+                      Nuestra visión
+                    </h1>
+                  </div>
+                  <div className=" flex justify-center items-center">
+                    <p className=" text-sm lg:text-base  text-justify">
                       En Centro Oral nos comprometemos a brindar a nuestros
                       pacientes una atención odontológica integral y de calidad,
                       centrada en la excelencia clínica y el bienestar del
                       paciente. Nuestro objetivo es mejorar la salud bucal de
                       nuestros pacientes, ofreciendo tratamientos innovadores,
                       personalizados y seguros, respaldados por un equipo de
-                      profesionales altamente capacitados y comprometidos con la
-                      excelencia en el servicio. Nos esforzamos por crear un
-                      ambiente acogedor y de confianza, donde nuestros pacientes
-                      se sientan cómodos y bien atendidos en todo momento.
-                    </h1>
+                      profesionales altamente capacitados.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#DFBB0B]">
-              <div className=" grid grid-cols-1 md:grid-cols-6">
-                <div className=" col-span-4 flex justify-center items-center relative">
-                  <div className=" m-5 block">
-                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#DFBB0B]">
-                      Tecnología de punta
-                    </h1>
-                    <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
-                      En Centro Oral, nos mantenemos a la vanguardia de la
-                      odontología mediante la implementación de tecnologías de
-                      última generación. Nuestro compromiso con la excelencia
-                      nos impulsa a utilizar equipos de diagnóstico y
-                      tratamiento de última tecnología, asegurando así
-                      procedimientos precisos, efectivos y cómodos para nuestros
-                      pacientes.
-                    </h1>
-                    <div className=" flex justify-center items-center my-2">
-                      <button className=" p-2 rounded-lg border border-white bg-[#DFBB0B] text-sm lg:text-base hover:border-black hover:bg-[#e4cc54] duration-300">
-                        Nuestros servicios
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
-                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] left-0"></div>
-                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] right-0"></div>
-                  <div className=" m-5 opacity-80 ">
+                <div className=" border-[#DFBB0B] border-l-[2px] grow w-full block p-3 ">
+                  <div className=" flex justify-center items-center  opacity-50">
                     <img
-                      className=" h-[120px] sm:h-[200px] rounded-lg w-auto object-contain"
-                      src="exocad.webp"
+                      className=" rounded-lg h-[150px]  w-auto "
+                      src="consultorio.webp"
                       alt=""
                     />
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className=" my-10 rounded-lg bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] w-full h-fit border border-[#DFBB0B]">
-              <div className=" grid grid-cols-1 md:grid-cols-6">
-                <div className=" col-span-2 bg-[#ffffff] flex justify-center items-center relative">
-                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] left-0"></div>
-                  <div className=" absolute h-full w-[5px] bg-[#DFBB0B] right-0"></div>
-                  <div className=" m-5 opacity-80 ">
-                    <img
-                      className=" h-[120px] sm:h-[200px] rounded-lg w-auto object-contain"
-                      src="smile1.webp"
-                      alt=""
-                    />
+                  <div className=" my-2 flex justify-center items-center">
+                    <h1 className=" font-semibold text-sm lg:text-base  text-center">
+                      Nuestra visión
+                    </h1>
                   </div>
-                </div>
-                <div className=" col-span-4 flex justify-center items-center relative">
-                  <div className=" m-5 block">
-                    <h1 className=" text-left font-semibold underline underline-offset-4 decoration-2 decoration-[#DFBB0B]">
-                      Queremos ser la causa de tu mejor sonrisa
-                    </h1>
-                    <h1 className=" text-justify text-[13px] sm:text-sm lg:text-base my-4">
-                      La sonrisa es parte crucial de tu salud y bienestar. Nos
-                      esforzamos por ofrecer tratamientos odontológicos
-                      avanzados que no solo mejoren la estética de tu sonrisa,
-                      sino también tu salud bucal. Nuestro equipo altamente
-                      capacitado y apasionado por la odontología utiliza
-                      tecnologías de vanguardia para garantizar que cada
-                      paciente reciba un tratamiento personalizado y de alta
-                      calidad.
-                    </h1>
-                    <div className=" flex justify-center items-center my-2">
-                      <button className=" p-2 bg-[#DFBB0B] hover:bg-[#e4cc54] duration-300 rounded-lg text-sm lg:text-base border hover:border-black border-white">
-                        Visítanos hoy
-                      </button>
-                    </div>
+                  <div className=" flex justify-center items-center">
+                    <p className=" text-sm lg:text-base  text-justify">
+                      En Centroral nos comprometemos a brindar a nuestros
+                      pacientes una atención odontológica integral y de calidad,
+                      centrada en la excelencia clínica y el bienestar del
+                      paciente. Nuestro objetivo es mejorar la salud bucal de
+                      nuestros pacientes, ofreciendo tratamientos innovadores,
+                      personalizados y seguros, respaldados por un equipo de
+                      profesionales altamente capacitados.
+                    </p>
                   </div>
                 </div>
               </div>

@@ -8,13 +8,13 @@ function Navbar() {
     { name: "Contacto", link: "/Contacto" },
   ];
   return (
-    <div className="font-sans  block w-screen fixed top-0 z-50">
+    <div className="font-sans block w-screen fixed top-0 z-50">
       <div className=" h-[25px] lg:h-[30px] flex justify-start bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb] opacity-80 items-center">
         <div className=" p-2 lg:p-3 text-[10px] sm:text-[13px] md:text-sm">
           Lunes a Viernes: 9 AM - 19 PM / Sábados: 09 AM - 14 PM
         </div>
       </div>
-      <div className="md:flex h-[85px] lg:h-[100px] items-center justify-between  py-4 md:px-10 px-7">
+      <div className="md:flex h-[85px] lg:h-[100px] items-center justify-between bg-opacity-45 bg-black py-4 md:px-10 px-7">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-white w-fit"
