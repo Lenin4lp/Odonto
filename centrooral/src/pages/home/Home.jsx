@@ -1,4 +1,5 @@
 import React from "react";
+import ServiceCard2 from "../../components/ServiceCard2";
 
 function Home() {
   const services = [
@@ -179,7 +180,7 @@ function Home() {
               </div>
             </div>
             <div className=" flex justify-center items-center">
-              <div className=" w-full max-w-[1000px] grow grid h-fit shadow-lg hover:shadow-none duration-300 bg-white gap-5 grid-cols-3 rounded-lg p-3 ">
+              <div className=" w-full max-w-[1000px] grow grid h-fit shadow-lg hover:shadow-none duration-300 bg-white gap-5 grid-cols-1 md:grid-cols-3 rounded-lg p-3 ">
                 <div className=" border-[#DFBB0B] border-r-[2px]  grow w-full block p-3 ">
                   <div className=" flex justify-center items-center  opacity-50">
                     <img
@@ -259,34 +260,56 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" bg-white relative mt-14 md:mt-20  border-y-[2px] border-[#DFBB0B]  w-full h-fit block">
-          <div className=" z-10 flex justify-center md:justify-start items-center">
-            <h1 className=" font-semibold text-base md:text-lg lg:text-xl rounded-full p-2 bg-black m-10 text-white">
-              Nuestros Servicios
-            </h1>
+        <div className=" bg-white  relative mt-14 md:mt-20  grow border-y-[2px] border-white  w-full h-fit p-3 block">
+          <div className=" flex justify-center items-center w-full p-3">
+            <h1 className=" text-2xl font-semibold">Nuestros servicios</h1>
           </div>
-          <div className=" z-10 my-5 block">
-            {services.map((service, index) => (
-              <div key={index} className=" my-4 block">
-                <div className=" flex justify-center sm:justify-start items-center">
-                  <h1 className=" font-semibold text-base rounded-full p-2 w-fit bg-black mx-10 text-white">
-                    {service.type}
-                  </h1>
-                </div>
-                <div className=" gap-y-0 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 h-fit">
-                  {service.includedServices.map((includedService, index) => (
-                    <div
-                      key={index}
-                      className=" h-fit group flex justify-start items-center p-2 relative"
-                    >
-                      <h1 className=" font-semibold text-[11px] md:text-[12px] lg:text-sm text-center rounded-full p-3 w-full border border-black hover:scale-[1.05] hover:border-[#d9b430] hover:cursor-pointer duration-500 bg-white my-3 md:my-4 lg:my-7 mx-5 md:mx-10 text-black">
-                        {includedService}
-                      </h1>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className=" flex justify-center items-center gap-3 w-full">
+            <div className="h-[1px] w-[100px] bg-black"></div>
+            <svg
+              viewBox="0 0 17 17"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="si-glyph si-glyph-teeth"
+              className=" fill-[#DFBB0B] h-[20px] lg:h-[30px] "
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <title>1110</title> <defs> </defs>{" "}
+                <g
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fillRule="evenodd"
+                >
+                  {" "}
+                  <path
+                    d="M14.715,9.02 C14.715,12.045 14.151,15.887 12.434,15.887 C9.62,15.887 10.916,10.001 8.491,10.001 C6.066,10.001 6.886,15.918 4.569,15.918 C2.94,15.918 2.292,12.002 2.292,9.02 C2.292,7.213 -0.101,4.249 1.672,1.628 C3.846,-1.586 5.94,0.952 8.437,0.952 C10.972,0.952 12.949,-1.533 15.265,1.628 C17.101,4.137 14.715,7.244 14.715,9.02 L14.715,9.02 Z"
+                    className="si-glyph-fill fill-[#DFBB0B]"
+                  >
+                    {" "}
+                  </path>{" "}
+                </g>{" "}
+              </g>
+            </svg>
+            <div className="h-[1px] w-[100px] bg-black"></div>
+          </div>
+          <div className=" grid grid-cols-5 my-5 grow w-full gap-4">
+            <ServiceCard2
+              imgSrc="diagnostico.webp"
+              title="Diagnóstico y prevención"
+            />
+            <ServiceCard2
+              imgSrc="ortodoncia.webp"
+              title="Odontología restauradora"
+            />
           </div>
         </div>
         <div className=" w-screen bg-black h-fit block">
