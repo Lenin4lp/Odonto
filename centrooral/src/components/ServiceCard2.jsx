@@ -2,24 +2,24 @@ import React from "react";
 
 const ServiceCard2 = ({ imgSrc, title }) => {
   return (
-    <div className="  border-[1px] border-[#DFBB0B] bg-gradient-to-r from-[#ffff] block shadow-xl to-[#e9e9e9] p-3 rounded-lg">
+    <div className=" hover:shadow-none duration-500 border-[1px] border-[#DFBB0B] bg-gradient-to-r from-[#ffff] block shadow-xl to-[#e9e9e9] p-3 rounded-lg">
       <div className="p-1 flex justify-center items-center opacity-50">
         <img
-          className=" rounded-lg h-[170px] w-full object-cover"
+          className=" rounded-lg  w-full object-cover"
           src={imgSrc}
           alt="imgdiag"
         />
       </div>
-      <div className="flex my-2 justify-center items-center">
-        <h1 className="text-lg font-semibold">{title}</h1>
+      <div className="flex my-2 justify-center h-[40px] items-center">
+        <h1 className="text-sm text-center font-semibold">{title}</h1>
       </div>
       <div className="flex mt-5 justify-center items-center">
-        <button className="bg-[#DFBB0B] w-[200px] text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
+        <button className="bg-[#DFBB0B] text-sm w-[200px] text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
           Descubrir más
         </button>
       </div>
       <div className="flex my-5 justify-center items-center">
-        <button className="border-[#DFBB0B] gap-3 w-[200px] border-[1px] flex justify-center items-center text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
+        <button className="border-[#DFBB0B] text-sm gap-3 w-[200px] border-[1px] flex justify-center items-center text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
           <h1>Cotizar servicio</h1>
           <svg
             className=" h-[20px] w-[20px] fill-black"

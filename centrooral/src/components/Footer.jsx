@@ -35,7 +35,7 @@ function Footer() {
               <g
                 id="Icon-Set"
                 transform="translate(-104.000000, -411.000000)"
-                fill="#000000"
+                className=" fill-white"
               >
                 {" "}
                 <path
@@ -73,7 +73,7 @@ function Footer() {
               <path
                 id="Vector"
                 d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z"
-                stroke="#000000"
+                className="stroke-white"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -88,7 +88,7 @@ function Footer() {
       info: "qKJt8@example.com",
       image: (
         <svg
-          className=" fill-black h-[25px] sm:h-[30px] w-auto"
+          className=" fill-white h-[25px] sm:h-[30px] w-auto"
           version="1.1"
           id="_x32_"
           xmlns="http://www.w3.org/2000/svg"
@@ -137,14 +137,14 @@ function Footer() {
   ];
   const currentYear = new Date().getFullYear();
   return (
-    <div className=" h-fit w-full bg-white ">
+    <div className=" h-fit w-full text-white bg-[#0a0a0a] ">
       <div className=" block">
         <div className=" sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           <div className=" col-span-1 my-5 px-5 md:px-10 lg:px-0 flex justify-center sm:justify-end start">
             <div className=" block">
               <img
                 className=" h-[80px] w-auto object-contain"
-                src="https://softdeveral.com/odonto/odontologo2.jpeg"
+                src="centlogo.png"
                 alt=""
               />
               {info.map((info, index) => (
@@ -192,7 +192,7 @@ function Footer() {
               <h1 className=" font-semibold mb-5 text-center">Síguenos</h1>
               <div className=" flex justify-center items-center">
                 <svg
-                  className="h-[25px] mx-2 md:h-[35px] fill-[#3b5998] hover:fill-black duration-500 hover:cursor-pointer"
+                  className="h-[25px] mx-2  fill-[#3b5998] hover:fill-[#DFBB0B] duration-500 hover:cursor-pointer"
                   viewBox="0 0 32 32"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +210,7 @@ function Footer() {
                   </g>
                 </svg>
                 <svg
-                  className="h-[25px] fill-[#F56040] hover:fill-black duration-500 hover:cursor-pointer mx-2 md:h-[35px] "
+                  className="h-[25px] fill-[#F56040] hover:fill-[#DFBB0B] duration-500 hover:cursor-pointer mx-2  "
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -233,13 +233,10 @@ function Footer() {
                   </g>
                 </svg>
                 <svg
-                  className="h-[25px] fill-[#0e76a8] hover:fill-black duration-500 hover:cursor-pointer mx-2 md:h-[35px] "
+                  className=" hover:cursor-pointer duration-500 h-[25px] fill-white hov hover:fill-[#DFBB0B] mx-2"
+                  viewBox="0 0 32 32"
                   version="1.1"
-                  id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  viewBox="-143 145 512 512"
-                  xmlSpace="preserve"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
@@ -249,7 +246,8 @@ function Footer() {
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
-                    <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"></path>{" "}
+                    <title>tiktok</title>{" "}
+                    <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path>{" "}
                   </g>
                 </svg>
               </div>
