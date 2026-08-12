@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div className=" block font-mono overflow-x-hidden relative" translate="no">
       <div className=" fixed bottom-5 right-5 z-50">
         <svg
-          className=" h-[40px] w-[40px] fill-[#2ea033]"
+          className=" hidden sm:block h-[40px] w-[40px] fill-[#2ea033]"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >

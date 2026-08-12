@@ -39,13 +39,13 @@ function Home() {
     <div className=" font-sans h-fit block justify-center items-center">
       <div className=" bg-cover block  relative">
         <div className=" h-screen z-10 w-screen absolute bg-white/10"></div>
-        <div className="absolute bottom-[60px] z-30 h-fit w-screen">
+        <div className="absolute bottom-[20px] xl:bottom-[60px] z-30 h-fit w-screen">
           <div className=" flex justify-center items-center">
-            <div className=" grid grid-cols-3 gap-10">
+            <div className=" grid grid-cols-3 gap-5 md:gap-10">
               <button
                 type="button"
                 aria-label="Facebook"
-                className="shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 cursor-pointer hover:scale-110 duration-300 p-3 sm:p-5 rounded-full w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]"
+                className="shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 cursor-pointer hover:scale-110 duration-300 p-3 lg:p-5 rounded-full w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]"
               >
                 <div className=" flex justify-center items-center">
                   <svg
@@ -71,7 +71,7 @@ function Home() {
               <button
                 type="button"
                 aria-label="Instagram"
-                className="shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 sm:p-5 rounded-full cursor-pointer hover:scale-110 duration-300 w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]"
+                className="shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 lg:p-5 rounded-full cursor-pointer hover:scale-110 duration-300 w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]"
               >
                 <div className=" flex justify-center items-center">
                   <svg
@@ -103,7 +103,7 @@ function Home() {
               <button
                 type="button"
                 aria-label="TikTok"
-                className="shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 sm:p-5 cursor-pointer hover:scale-110 duration-300 rounded-full w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]"
+                className="shadow-sm shadow-gray-500 hover:shadow-lg hover:shadow-gray-600 h-fit z-10 p-3 lg:p-5 cursor-pointer hover:scale-110 duration-300 rounded-full w-fit bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]"
               >
                 <svg
                   className="pointer-events-none h-[25px]  fill-[#DFBB0B]"
@@ -127,24 +127,26 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" absolute top-[130px] overflow-hidden mx-5 m-10 md:m-14 md:mx-14  lg:mx-20 w-screen left-0 flex z-20 justify-start items-start">
+        <div className=" absolute top-[100px] lg:top-[130px] overflow-hidden mx-5 m-10 md:m-14 md:mx-14  lg:mx-20 w-screen left-0 flex z-20 justify-start items-start">
           <div className=" grid grid-cols-3 ">
             <div className=" block col-span-2">
-              <h1 className=" text-base lg:text-lg text-white">Tu sonrisa,</h1>
-              <h1 className=" text-base lg:text-lg text-[#DFBB0B] font-semibold">
+              <h1 className=" text-sm md:text-base lg:text-lg text-white">
+                Tu sonrisa,
+              </h1>
+              <h1 className=" text-sm md:text-base lg:text-lg text-[#DFBB0B] font-semibold">
                 nuestra especialidad
               </h1>
-              <h1 className=" pt-10 font-bold text-xl sm:text-2xl  text-white">
+              <h1 className=" pt-10 font-bold text-base sm:text-lg md:text-xl lg:text-2xl  text-white">
                 Descubre la <span className=" text-[#DFBB0B]">magia</span>
               </h1>
-              <h1 className=" font-bold text-xl sm:text-2xl  text-white">
+              <h1 className=" font-bold text-base sm:text-lg md:text-xl lg:text-2xl  text-white">
                 detrás de una <span className=" text-[#DFBB0B]">sonrisa</span>
               </h1>
-              <h1 className=" text-4xl sm:text-5xl font-black text-[#DFBB0B]">
+              <h1 className=" text-3xl md:text-4xl lg:text-5xl font-black text-[#DFBB0B]">
                 SALUDABLE
               </h1>
               <div className=" flex justify-start sm:justify-center items-center">
-                <button className=" my-10 text-sm lg:text-base p-3 rounded-xl hover:bg-[#e4cc54] duration-300 bg-[#DFBB0B]">
+                <button className=" my-5 lg:my-10 text-[11px] md:text-sm lg:text-base p-3 rounded-xl hover:bg-[#e4cc54] duration-300 bg-[#DFBB0B]">
                   Agenda una cita ya!
                 </button>
               </div>
@@ -164,12 +166,16 @@ function Home() {
           <div className=" block">
             <div className="mb-7 mt-2 flex justify-center items-center grow w-full ">
               <div className="  rounded-full  ">
-                <img className="h-[80px]" src="CentroralLogo.png" alt="" />
+                <img
+                  className=" h-[60px] sm:h-[80px]"
+                  src="CentroralLogo.png"
+                  alt=""
+                />
               </div>
             </div>
             <div className=" flex justify-center items-center">
               <div className=" w-full max-w-[1000px] grow grid h-fit shadow-lg hover:shadow-none duration-300 bg-white gap-5 grid-cols-1 md:grid-cols-3 rounded-lg p-3 ">
-                <div className=" border-[#DFBB0B] border-r-[2px]  grow w-full block p-3 ">
+                <div className=" md:border-[#DFBB0B] md:border-r-[2px]  grow w-full block p-3 ">
                   <div className=" flex justify-center items-center  opacity-50">
                     <img
                       className=" rounded-lg object-cover w-auto "
@@ -219,10 +225,10 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div className=" border-[#DFBB0B] border-l-[2px] grow w-full block p-3 ">
+                <div className=" md:border-[#DFBB0B] md:border-l-[2px] grow w-full block p-3 ">
                   <div className=" flex justify-center items-center  opacity-50">
                     <img
-                      className=" rounded-lg h-[150px]  w-auto "
+                      className=" rounded-lg object-cover   w-auto "
                       src="consultorio.webp"
                       alt=""
                     />
