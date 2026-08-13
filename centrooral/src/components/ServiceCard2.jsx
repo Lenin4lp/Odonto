@@ -10,16 +10,16 @@ const ServiceCard2 = ({ imgSrc, title }) => {
           alt="imgdiag"
         />
       </div>
-      <div className="flex my-2 justify-center h-[40px] items-center">
+      <div className="flex sm:my-2 justify-center h-[40px] items-center">
         <h1 className="text-sm text-center font-semibold">{title}</h1>
       </div>
-      <div className="flex mt-5 justify-center items-center">
-        <button className="bg-[#DFBB0B] text-sm w-[200px] text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
+      <div className="flex mt-2 sm:mt-5 justify-center items-center">
+        <button className="bg-[#DFBB0B] text-[12px] sm:text-sm w-[200px] text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
           Descubrir más
         </button>
       </div>
       <div className="flex my-5 justify-center items-center">
-        <button className="border-[#DFBB0B] text-sm gap-3 w-[200px] border-[1px] flex justify-center items-center text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
+        <button className="border-[#DFBB0B] text-[12px] sm:text-sm gap-3 w-[200px] border-[1px] flex justify-center items-center text-black py-2 px-4 rounded-lg hover:bg-[#ebd150] duration-500">
           <h1>Cotizar servicio</h1>
           <svg
             className=" h-[20px] w-[20px] fill-black"

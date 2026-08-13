@@ -2,13 +2,11 @@ import React from "react";
 
 const TitleBand = ({ title, color, image, textColor }) => {
   return (
-    <div
-      className={`h-[100px] sm:h-[150px] lg:h-[200px]   bg-cover bg-center block relative`}
-    >
-      <div className={`h-full w-screen ${color} relative`}>
+    <div className={`  bg-cover bg-center block relative`}>
+      <div className={`h-[100px] sm:h-[150px]  w-screen ${color} relative`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-0 left-0 -z-50 right-0 bottom-0 w-full h-full"
+          className="absolute  left-0 -z-50 right-0 w-full h-[100px] sm:h-[150px]"
           viewBox="0 0 1920 430"
           preserveAspectRatio="xMidYMid slice"
           role="img"
@@ -269,7 +267,7 @@ const TitleBand = ({ title, color, image, textColor }) => {
           </g>
         </svg>
         <h1
-          className={`absolute lg:bottom-[75px] right-0 left-0 text-center sm:bottom-[50px] bottom-[30px] ${textColor} text-3xl sm:text-5xl md:text-7xl font-extrabold`}
+          className={`absolute   right-0 left-0 text-center sm:bottom-[50px] bottom-[30px] ${textColor} text-xl sm:text-3xl md:text-5xl font-extrabold`}
         >
           {title}
         </h1>

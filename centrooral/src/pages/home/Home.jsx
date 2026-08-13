@@ -184,12 +184,12 @@ function Home() {
                     />
                   </div>
                   <div className=" my-2 flex justify-center items-center">
-                    <h1 className=" font-semibold text-sm   text-center">
+                    <h1 className=" font-semibold text-[12px] sm:text-sm   text-center">
                       Nuestra visión
                     </h1>
                   </div>
                   <div className=" flex justify-center items-center">
-                    <p className=" text-sm  text-justify">
+                    <p className=" text-[12px] sm:text-sm  text-justify">
                       En Centroral nos comprometemos a brindar a nuestros
                       pacientes una atención odontológica integral y de calidad,
                       centrada en la excelencia clínica y el bienestar del
@@ -209,12 +209,12 @@ function Home() {
                     />
                   </div>
                   <div className=" my-2 flex justify-center items-center">
-                    <h1 className=" font-semibold text-sm text-center">
+                    <h1 className=" font-semibold text-[12px] sm:text-sm text-center">
                       Nuestra visión
                     </h1>
                   </div>
                   <div className=" flex justify-center items-center">
-                    <p className=" text-sm text-justify">
+                    <p className=" text-[12px] sm:text-sm text-justify">
                       En Centro Oral nos comprometemos a brindar a nuestros
                       pacientes una atención odontológica integral y de calidad,
                       centrada en la excelencia clínica y el bienestar del
@@ -234,12 +234,12 @@ function Home() {
                     />
                   </div>
                   <div className=" my-2 flex justify-center items-center">
-                    <h1 className=" font-semibold text-sm lg:text-base  text-center">
+                    <h1 className=" font-semibold text-[12px] sm:text-sm lg:text-base  text-center">
                       Nuestra visión
                     </h1>
                   </div>
                   <div className=" flex justify-center items-center">
-                    <p className=" text-sm  text-justify">
+                    <p className=" text-[12px] sm:text-sm  text-justify">
                       En Centroral nos comprometemos a brindar a nuestros
                       pacientes una atención odontológica integral y de calidad,
                       centrada en la excelencia clínica y el bienestar del
@@ -256,7 +256,9 @@ function Home() {
         </div>
         <div className=" bg-white  relative mt-14 md:mt-20  grow border-y-[2px] border-white  w-full h-fit p-3 block">
           <div className=" flex justify-center items-center w-full">
-            <h1 className=" text-lg font-semibold">Nuestros servicios</h1>
+            <h1 className="  text-sm md:text-lg font-semibold">
+              Nuestros servicios
+            </h1>
           </div>
           <div className=" flex justify-center items-center gap-1 w-full">
             <div className="h-[1px] w-[70px] bg-[#DFBB0B]"></div>
