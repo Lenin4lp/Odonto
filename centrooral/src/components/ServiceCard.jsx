@@ -2,21 +2,26 @@ import React from "react";
 
 const ServiceCard = ({ name, image, description }) => {
   return (
-    <div className=" flex justify-center items-center bg-white h-[264px] w-[220px] sm:h-[300px] sm:w-[250px] rounded-lg relative">
-      <div className=" absolute top-0 h-full w-full bg-white rounded-lg opacity-0 hover:opacity-100 duration-500 flex justify-center items-center">
-        <div className=" m-2 sm:m-3">
-          <h1 className=" text-[12px] sm:text-sm text-justify m-2 font-semibold">
+    <div
+      className="group h-[264px] w-[220px] [perspective:1000px] sm:h-[300px] sm:w-[250px]"
+      tabIndex={0}
+      aria-label={`${name}: gira la tarjeta para ver la descripción`}
+    >
+      <div className="relative h-full w-full rounded-lg transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
+        <div className="absolute inset-0 grid h-full w-full grid-rows-5 rounded-lg bg-white p-2 [backface-visibility:hidden]">
+          <div className="row-span-3 flex h-full items-end justify-center">
+            {image}
+          </div>
+          <div className="row-span-2 flex h-full items-center justify-center">
+            <h1 className="px-5 text-center text-sm font-semibold sm:text-base">
+              {name}
+            </h1>
+          </div>
+        </div>
+
+        <div className="absolute inset-0 flex h-full w-full items-center justify-center rounded-lg bg-white p-2 [backface-visibility:hidden] [transform:rotateY(180deg)] sm:p-3">
+          <h1 className="m-2 text-justify text-[12px] font-semibold sm:text-sm">
             {description}
-          </h1>
-        </div>
-      </div>
-      <div className=" grid h-full w-full grid-rows-5 m-2">
-        <div className=" row-span-3 h-full flex justify-center items-end">
-          {image}
-        </div>
-        <div className=" h-full row-span-2 flex justify-center items-center">
-          <h1 className=" text-center text-sm sm:text-base font-semibold px-5">
-            {name}
           </h1>
         </div>
       </div>
