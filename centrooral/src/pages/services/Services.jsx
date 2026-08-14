@@ -18,7 +18,7 @@ function Services() {
         image="bg-[url('https://softdeveral.com/odonto/mouth.webp')]"
       />
       <div className=" block">
-        <div className=" h-fit flex justify-center items-center w-screen bg-gradient-to-br from-[#2c2c2c] to-[#000000]">
+        <div className=" h-fit flex justify-center items-center w-screen bg-gradient-to-br from-[#DFBB0B] to-[#ffffff]">
           <div className=" m-10 grid grid-cols-1">
             <div>
               <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-7">

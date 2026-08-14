@@ -10,7 +10,11 @@ const ServiceCard = ({ name, image, description }) => {
       <div className="relative h-full w-full rounded-lg transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
         <div className="absolute inset-0 grid h-full w-full grid-rows-5 rounded-lg bg-white p-2 [backface-visibility:hidden]">
           <div className="row-span-3 flex h-full items-end justify-center">
-            {image}
+            <img
+              src={image}
+              alt={name}
+              className="h-full w-full rounded-lg opacity-70 object-cover"
+            />
           </div>
           <div className="row-span-2 flex h-full items-center justify-center">
             <h1 className="px-5 text-center text-sm font-semibold sm:text-base">
