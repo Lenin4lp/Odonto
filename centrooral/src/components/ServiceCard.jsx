@@ -8,7 +8,7 @@ const ServiceCard = ({ name, image, description }) => {
       aria-label={`${name}: gira la tarjeta para ver la descripción`}
     >
       <div className="relative h-full w-full rounded-lg transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
-        <div className="absolute inset-0 grid h-full w-full grid-rows-5 rounded-lg bg-white p-2 [backface-visibility:hidden]">
+        <div className="absolute inset-0 grid h-full w-full grid-rows-5 rounded-lg bg-white shadow-lg p-2 [backface-visibility:hidden]">
           <div className="row-span-3 flex h-full items-end justify-center">
             <img
               src={image}
