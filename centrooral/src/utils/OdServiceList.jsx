@@ -1,14 +1,26 @@
 export const odServicesList = [
   {
     name: "Servicios para odontólogos y clínicas",
-    image: "disenodigital.webp",
-    description:
-      "El diseño de sonrisa digital es un proceso que utiliza tecnología computarizada para planificar y visualizar resultados estéticos antes de realizar tratamientos dentales. Permite a los pacientes ver cómo se verán sus dientes después del tratamiento, facilitando la toma de decisiones informadas sobre su cuidado bucal.",
+    image: "odontologosclinicas.webp",
+    description: [
+      "Recepción de escaneos intraorales",
+      "Diseño CAD como servicio",
+      "Impresión 3D",
+      "Fresado de zirconio, PMMA y otros materiales",
+      "Elaboración de guías quirúrgicas",
+      "Recolección y entrega de trabajos",
+    ],
   },
   {
-    name: "Prótesis convencional",
-    image: "protesisconvencional.webp",
-    description:
-      "El diseño de sonrisa digital es un proceso que utiliza tecnología computarizada para planificar y visualizar resultados estéticos antes de realizar tratamientos dentales. Permite a los pacientes ver cómo se verán sus dientes después del tratamiento, facilitando la toma de decisiones informadas sobre su cuidado bucal.",
+    name: "Servicios complementarios",
+    image: "scomplementarios.webp",
+    description: [
+      "Atención de urgencias odontológicas",
+      "Planes familiares y empresariales",
+      "Financiamiento de tratamientos",
+      "Valoración interdisciplinaria",
+      "Seguimiento posoperatorio",
+      "Teleorientación y controles virtuales seleccionados",
+    ],
   },
 ];

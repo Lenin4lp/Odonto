@@ -138,7 +138,7 @@ function Contact() {
 
   return (
     <div className=" font-sans h-fit block justify-center items-center">
-      <div className=" bg-cover block  relative">
+      <div className=" bg-black block  relative">
         <div className=" h-[70px] sm:h-[100px] w-screen"></div>
       </div>
       <TitleBand
@@ -147,27 +147,191 @@ function Contact() {
         textColor="text-white"
         image="bg-[url('https://softdeveral.com/odonto/phonesss.jpeg')]"
       />
-      <div className=" block ">
-        <div className="h-fit md:h-[450px] pb-10 md:pb-5 p-5 md:p-10 flex justify-center items-center w-screen bg-gradient-to-br from-[#f5f5f5] to-[#dbdbdb]">
-          <div className=" h-full grid grid-cols-1 md:grid-cols-9 ">
-            {contacts.map((contact, index) => (
-              <div
-                key={index}
-                className=" mt-5 md:mt-0 md:col-span-3 px-5 md:px-10 flex justify-center items-center"
-              >
-                <div className=" block">
-                  <ContactIcon>{contact.image}</ContactIcon>
-                  <div className=" my-3 block">
-                    <h1 className=" text-center text-lg md:text-xl font-semibold">
-                      {contact.name}
-                    </h1>
-                  </div>
-                  {contact.description}
+      <div className=" block bg-gradient-to-br from-[#D9B430] to-[#ffffff]">
+        <div className=" p-5 flex justify-center items-center">
+          <h1 className=" font-semibold text-2xl">Canales de comunicación</h1>
+        </div>
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7 m-5 ">
+          <div className=" mt-2  mb-5 flex justify-center border-[1px] border-black w-full rounded-lg p-3 items-start shadow-xl ">
+            <div className=" block grow">
+              <div className=" h-full w-full flex p-2 rounded-lg justify-center items-center">
+                <div className=" p-2 rounded-full bg-white border-black border-[2px]">
+                  <svg
+                    className=" h-[30px] "
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <path
+                        d="M5.11596 12.7268L8.15456 9.08666C8.46255 8.69067 8.61655 8.49267 8.69726 8.27061C8.76867 8.07411 8.79821 7.86486 8.784 7.65628C8.76793 7.42055 8.67477 7.18766 8.48846 6.72187L7.77776 4.94513C7.50204 4.25581 7.36417 3.91116 7.12635 3.68525C6.91678 3.48618 6.65417 3.3519 6.37009 3.29856C6.0477 3.23803 5.68758 3.32806 4.96733 3.50812L3 4.00002C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3122 20.7617 17.952 20.7012 17.6297C20.6478 17.3456 20.5136 17.083 20.3145 16.8734C20.0886 16.6356 19.7439 16.4977 19.0546 16.222L17.4691 15.5878C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4002C15.4877 15.512 15.2854 15.7144 14.8807 16.1191L11.7943 19.1569"
+                        className=" stroke-black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>{" "}
+                    </g>
+                  </svg>
                 </div>
               </div>
-            ))}
+              <div className=" flex justify-center items-center">
+                <h1 className=" font-semibold text-sm">Teléfono</h1>
+              </div>
+              <div className="">
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-center text-black">
+                      Od. Marcelo Ruales
+                    </p>
+                    <p className=" text-center text-lg text-black">
+                      +1 (555) 123-4567
+                    </p>
+                  </div>
+                </div>
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-center text-black">Od. Edison Ruales</p>
+                    <p className=" text-center text-lg text-black">
+                      +1 (555) 123-4567
+                    </p>
+                  </div>
+                </div>
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-center text-black">
+                      Od. Carolina Ruales
+                    </p>
+                    <p className=" text-center text-lg text-black">
+                      +1 (555) 123-4567
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" mt-2 mb-5 border-[1px] border-black flex justify-center w-full rounded-lg p-3 items-start shadow-xl ">
+            <div className=" block grow">
+              <div className=" h-full w-full flex p-2 rounded-lg justify-center items-center">
+                <div className=" p-2 rounded-full bg-white border-black border-[2px]">
+                  <svg
+                    className=" h-[30px] "
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <path
+                        d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>{" "}
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div className=" flex justify-center items-center">
+                <h1 className=" font-semibold text-sm">Correo Electrónico</h1>
+              </div>
+              <div className="my-7">
+                <div className="  text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-base text-black">marc@example.com</p>
+                  </div>
+                </div>
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-base text-black">marc@example.com</p>
+                  </div>
+                </div>
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-base text-black">marc@example.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" mt-2 mb-5 border-[1px] border-black flex justify-center w-full rounded-lg p-3 items-center shadow-xl ">
+            <div className=" block grow">
+              <div className=" h-full w-full flex p-2 rounded-lg justify-center items-center">
+                <div className=" p-2 rounded-full bg-white border-black border-[2px]">
+                  <svg
+                    className=" h-[30px] "
+                    version="1.1"
+                    id="XMLID_128_"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <g id="location-pin">
+                        {" "}
+                        <g>
+                          {" "}
+                          <path d="M12,24l-0.6-0.4C11,23.3,2,17.2,2,10C2,4.5,6.5,0,12,0s10,4.5,10,10c0,7.2-9,13.3-9.4,13.6L12,24z M12,2c-4.4,0-8,3.6-8,8 c0,5.2,6.1,10.1,8,11.6c1.9-1.5,8-6.4,8-11.6C20,5.6,16.4,2,12,2z M12,14c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S14.2,14,12,14z M12,8c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S13.1,8,12,8z"></path>{" "}
+                        </g>{" "}
+                      </g>{" "}
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div className=" flex justify-center items-center">
+                <h1 className=" font-semibold text-sm">Correo Electrónico</h1>
+              </div>
+              <div className="">
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-black">Od. Marcelo Ruales</p>
+                    <p className=" text-center text-lg text-black">
+                      +1 (555) 123-4567
+                    </p>
+                  </div>
+                </div>
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-black">Od. Marcelo Ruales</p>
+                    <p className=" text-center text-lg text-black">
+                      +1 (555) 123-4567
+                    </p>
+                  </div>
+                </div>
+                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
+                  <div className="block">
+                    <p className=" text-black">Od. Marcelo Ruales</p>
+                    <p className=" text-center text-lg text-black">
+                      +1 (555) 123-4567
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className=" border-[2px] border-[#d9b430] w-screen h-fit grid grid-cols-1 md:grid-cols-2">
           <div className=" h-fit relative">
             <MapContainer
