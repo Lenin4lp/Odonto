@@ -1,122 +1,65 @@
 import React from "react";
 import TitleBand from "../../components/TitleBand";
-import ContactIcon from "../../components/ContactIcon";
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
-import { Icon, icon } from "leaflet";
-import { useForm } from "react-hook-form";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { Icon } from "leaflet";
+import ContactCard from "../../components/ContactCard";
+
+const PhoneIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-7 w-7">
+    <path
+      d="M5 4h3l1.5 4-2 1.5a15 15 0 0 0 7 7l1.5-2 4 1.5v3a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2Z"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const MailIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-7 w-7">
+    <rect
+      x="3"
+      y="5"
+      width="18"
+      height="14"
+      rx="2"
+      stroke="currentColor"
+      strokeWidth="1.8"
+    />
+    <path
+      d="m4 7 8 6 8-6"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const LocationIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-7 w-7">
+    <path
+      d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinejoin="round"
+    />
+    <circle cx="12" cy="10" r="2.5" stroke="currentColor" strokeWidth="1.8" />
+  </svg>
+);
 
 function Contact() {
-  const { register, handleSubmit } = useForm();
-  const contacts = [
-    {
-      name: "Teléfono",
-      image: (
-        <svg
-          className=" h-[80px] md:h-[100px] opacity-60"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <path
-              d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
-              stroke="#000000"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>{" "}
-          </g>
-        </svg>
-      ),
-      description: (
-        <div className=" block text-center text-sm lg:text-base">
-          <h1>098 406 9344 / 098 336 0525</h1>
-          <h1>098 441 4385</h1>
-        </div>
-      ),
-    },
-    {
-      name: "Email",
-      image: (
-        <svg
-          className=" h-[80px] md:h-[100px] opacity-60"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <path
-              d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
-              stroke="#000000"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>{" "}
-          </g>
-        </svg>
-      ),
-      description: (
-        <div className=" block text-center mb-[25px]">
-          <h1 className="">qKJt8@example.com</h1>
-        </div>
-      ),
-    },
-    {
-      name: "Dirección",
-      image: (
-        <svg
-          className=" h-[80px] md:h-[100px] opacity-60"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <path
-              d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-              stroke="#000000"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>{" "}
-            <path
-              d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-              stroke="#000000"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>{" "}
-          </g>
-        </svg>
-      ),
-      description: (
-        <div className=" block text-sm md:text-base text-center text-wrap lg:mb-[25px]">
-          <h1>Calle 1 # 2-3, Barrio San Francisco</h1>
-        </div>
-      ),
-    },
-  ];
+  const ToothIcon = () => (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-3.5 w-3.5 shrink-0 fill-[#DFBB0B] sm:h-4 sm:w-4"
+    >
+      <path d="M7.2 2C4.4 2 2.5 4.2 2.5 7.1c0 2.1.9 3.8 1.7 5.3.7 1.3 1.3 2.5 1.5 4.2.3 2.9 1 5.4 2.7 5.4 1.3 0 1.8-1.7 2.3-3.5.4-1.4.7-2.4 1.3-2.4s.9 1 1.3 2.4c.5 1.8 1 3.5 2.3 3.5 1.7 0 2.4-2.5 2.7-5.4.2-1.7.8-2.9 1.5-4.2.8-1.5 1.7-3.2 1.7-5.3C21.5 4.2 19.6 2 16.8 2c-1.5 0-2.6.5-3.5.9-.6.3-1 .5-1.3.5s-.7-.2-1.3-.5C9.8 2.5 8.7 2 7.2 2Z" />
+    </svg>
+  );
 
   const customIcon = new Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/1483/1483336.png",
@@ -148,14 +91,118 @@ function Contact() {
         image="bg-[url('https://softdeveral.com/odonto/phonesss.jpeg')]"
       />
       <div className=" block bg-gradient-to-br from-[#D9B430] to-[#ffffff]">
-        <div className=" p-5 flex justify-center items-center">
-          <h1 className=" font-semibold text-2xl">Canales de comunicación</h1>
+        <div className="px-5 pb-3 pt-10 text-center sm:pt-14">
+          <span className="text-xs font-bold uppercase tracking-[0.28em] text-[#8a6d00]">
+            Estamos para ayudarte
+          </span>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-[#171717] sm:text-4xl">
+            Canales de comunicación
+          </h1>
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-600 sm:text-base">
+            Elige el medio que prefieras y agenda tu próxima consulta con
+            nuestro equipo.
+          </p>
         </div>
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7 m-5 ">
-          <div className=" mt-2  mb-5 flex justify-center border-[1px] border-black w-full rounded-lg p-3 items-start shadow-xl ">
+        <section className="mx-auto grid max-w-7xl grid-cols-1 gap-5 px-5 pb-12 pt-7 md:grid-cols-2 lg:grid-cols-3 lg:gap-7 lg:px-8 lg:pb-16">
+          <ContactCard
+            icon={<PhoneIcon />}
+            title="Teléfonos"
+            subtitle="Llámanos o escríbenos para agendar una cita"
+          >
+            <div className="space-y-3">
+              {["Marcelo Ruales", "Edison Ruales", "Carolina Ruales"].map(
+                (name) => (
+                  <a
+                    key={name}
+                    href="tel:+15551234567"
+                    className="flex items-center justify-between rounded-xl bg-[#f8f6ef] px-4 py-3 transition hover:bg-[#f1e7bc]"
+                  >
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">
+                        Od. {name}
+                      </p>
+                      <p className="mt-0.5 text-sm text-gray-600">
+                        +1 (555) 123-4567
+                      </p>
+                    </div>
+                    <span className="text-lg text-[#9d7c00]" aria-hidden="true">
+                      →
+                    </span>
+                  </a>
+                ),
+              )}
+            </div>
+          </ContactCard>
+          <ContactCard
+            icon={<MailIcon />}
+            title="Correo electrónico"
+            subtitle="Envíanos tus dudas y responderemos lo antes posible"
+          >
+            <div className="space-y-3">
+              {[
+                ["Información general", "marc@example.com"],
+                ["Citas y consultas", "marc@example.com"],
+                ["Atención al paciente", "marc@example.com"],
+              ].map(([label, email]) => (
+                <a
+                  key={label}
+                  href={`mailto:${email}`}
+                  className="block rounded-xl bg-[#f8f6ef] px-4 py-3 transition hover:bg-[#f1e7bc]"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[#8a6d00]">
+                    {label}
+                  </p>
+                  <p className="mt-1 break-all text-sm font-medium text-gray-800">
+                    {email}
+                  </p>
+                </a>
+              ))}
+            </div>
+          </ContactCard>
+          <ContactCard
+            icon={<LocationIcon />}
+            title="Nuestros consultorios"
+            subtitle="Encuentra la sede más cercana a ti"
+            className="md:col-span-2 lg:col-span-1"
+          >
+            <div className="space-y-5">
+              <div>
+                <h3 className="mb-2 text-sm font-bold text-gray-900">
+                  Valle de los Chillos
+                </h3>
+                <div className="space-y-2">
+                  {[1, 2].map((office) => (
+                    <div
+                      key={office}
+                      className="flex gap-3 rounded-xl bg-[#f8f6ef] p-3"
+                    >
+                      <ToothIcon />
+                      <p className="text-xs leading-relaxed text-gray-600">
+                        Av. San Luis y 9na transversal, Edificio Platinium
+                        Plaza, 2do piso, oficina 2
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="mb-2 text-sm font-bold text-gray-900">Quito</h3>
+                <div className="flex gap-3 rounded-xl bg-[#f8f6ef] p-3">
+                  <ToothIcon />
+                  <p className="text-xs leading-relaxed text-gray-600">
+                    Av. San Luis y 9na transversal, Edificio Platinium Plaza,
+                    2do piso, oficina 2
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ContactCard>
+        </section>
+        <div className="hidden grid-cols-1 gap-5 m-5 md:grid-cols-3 lg:gap-7">
+          <div className=" mt-2  mb-5 flex justify-center border-[1px] bg-white  border-black w-full rounded-lg p-3 items-start shadow-xl ">
             <div className=" block grow">
               <div className=" h-full w-full flex p-2 rounded-lg justify-center items-center">
-                <div className=" p-2 rounded-full bg-white border-black border-[2px]">
+                <div className=" p-2 rounded-full bg-gradient-to-b from-[#D9B430] to-[#ffffff] border-black border-[2px]">
                   <svg
                     className=" h-[30px] "
                     viewBox="0 0 24 24"
@@ -216,10 +263,10 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className=" mt-2 mb-5 border-[1px] border-black flex justify-center w-full rounded-lg p-3 items-start shadow-xl ">
+          <div className=" mt-2 mb-5 bg-white border-[1px] border-black flex justify-center w-full rounded-lg p-3 items-start shadow-xl ">
             <div className=" block grow">
               <div className=" h-full w-full flex p-2 rounded-lg justify-center items-center">
-                <div className=" p-2 rounded-full bg-white border-black border-[2px]">
+                <div className=" p-2 rounded-full bg-gradient-to-b from-[#D9B430] to-[#ffffff] border-black border-[2px]">
                   <svg
                     className=" h-[30px] "
                     viewBox="0 0 24 24"
@@ -267,10 +314,10 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className=" mt-2 mb-5 border-[1px] border-black flex justify-center w-full rounded-lg p-3 items-center shadow-xl ">
+          <div className=" mt-2 mb-5 bg-white border-[1px] border-black flex justify-center w-full rounded-lg p-3 items-start  shadow-xl ">
             <div className=" block grow">
               <div className=" h-full w-full flex p-2 rounded-lg justify-center items-center">
-                <div className=" p-2 rounded-full bg-white border-black border-[2px]">
+                <div className=" p-2 rounded-full bg-gradient-to-b from-[#D9B430] to-[#ffffff] border-black border-[2px]">
                   <svg
                     className=" h-[30px] "
                     version="1.1"
@@ -300,32 +347,43 @@ function Contact() {
                 </div>
               </div>
               <div className=" flex justify-center items-center">
-                <h1 className=" font-semibold text-sm">Correo Electrónico</h1>
+                <h1 className=" font-semibold text-sm">
+                  Nuestros consultorios
+                </h1>
               </div>
-              <div className="">
-                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
-                  <div className="block">
-                    <p className=" text-black">Od. Marcelo Ruales</p>
-                    <p className=" text-center text-lg text-black">
-                      +1 (555) 123-4567
-                    </p>
-                  </div>
+              <div className="flex p-3 justify-start items-center">
+                <h1 className=" text-sm text-black font-semibold">
+                  Valle de los Chillos
+                </h1>
+              </div>
+              <div className=" flex justify-start items-center">
+                <ToothIcon />
+                <div className=" px-2">
+                  <p className=" text-[13px] text-black">
+                    Av. San luis y 9na transversal, Edificio PLATINIUM PLAZA 2do
+                    piso, oficina 2
+                  </p>
                 </div>
-                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
-                  <div className="block">
-                    <p className=" text-black">Od. Marcelo Ruales</p>
-                    <p className=" text-center text-lg text-black">
-                      +1 (555) 123-4567
-                    </p>
-                  </div>
+              </div>
+              <div className=" flex justify-start items-center">
+                <ToothIcon />
+                <div className=" px-2">
+                  <p className=" text-[13px] text-black">
+                    Av. San luis y 9na transversal, Edificio PLATINIUM PLAZA 2do
+                    piso, oficina 2
+                  </p>
                 </div>
-                <div className=" my-2 text-sm flex justify-center gap-2 items-center">
-                  <div className="block">
-                    <p className=" text-black">Od. Marcelo Ruales</p>
-                    <p className=" text-center text-lg text-black">
-                      +1 (555) 123-4567
-                    </p>
-                  </div>
+              </div>
+              <div className="flex p-3 justify-start items-center">
+                <h1 className=" text-sm text-black font-semibold">Quito</h1>
+              </div>
+              <div className=" flex justify-start items-center">
+                <ToothIcon />
+                <div className=" px-2">
+                  <p className=" text-[13px] text-black">
+                    Av. San luis y 9na transversal, Edificio PLATINIUM PLAZA 2do
+                    piso, oficina 2
+                  </p>
                 </div>
               </div>
             </div>
@@ -362,81 +420,122 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className=" h-fit w-screen bg-[url('https://softdeveral.com/odonto/surgery.webp')] bg-center bg-cover">
-          <div className=" relative h-full w-full bg-[#d9b430]/80">
+        <div className="w-full bg-[url('https://softdeveral.com/odonto/surgery.webp')] bg-center bg-cover">
+          <div className="relative w-full bg-gradient-to-br from-[#d9b430]/95 via-[#e7c957]/90 to-[#f4e7b3]/90">
             <div className=" absolute top-0 right-0 left-0 bottom-0 h-full w-full grid grid-cols-1 lg:grid-cols-3"></div>
-            <div className=" h-full p-2 sm:p-8 md:p-10 w-full grid grid-cols-1 lg:grid-cols-3">
-              <div className="flex mt-10 justify-center col-span-1 items-start">
-                <div className=" block">
+            <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-5 lg:gap-12 lg:px-10">
+              <div className="flex items-center justify-center lg:col-span-2 lg:justify-start">
+                <div className="max-w-md rounded-3xl border border-white/30 bg-black/5 p-7 backdrop-blur-sm sm:p-9">
                   <div className=" flex justify-center items-center ">
                     <img
-                      className=" h-[115px] sm:h-[150px] lg:h-[150px] w-auto"
-                      src="https://softdeveral.com/odonto/blacklogo.png"
-                      alt=""
+                      className=" h-[70px] md:h-[105px] w-auto "
+                      src="/home.png"
+                      alt="Centro Oral"
                     />
                   </div>
-                  <div className=" mx-5 sm:mx-10 my-5">
-                    <h1 className=" font-semibold text-black text-[12px] sm:text-sm text-justify">
+                  <div className="mt-7">
+                    <p className="text-center text-sm leading-7 text-black/75 sm:text-left sm:text-base">
                       En Centro Oral, nuestra pasión es crear sonrisas
                       saludables y hermosas que transformen vidas. Desde nuestra
                       fundación, nos hemos comprometido a brindar una atención
                       odontológica integral y de calidad, centrada en el
                       bienestar y la satisfacción de nuestros pacientes.
-                    </h1>
+                    </p>
+                    <div className="mt-7 flex items-center justify-center gap-3 sm:justify-start">
+                      <span className="h-px w-10 bg-black/40" />
+                      <span className="text-xs font-bold uppercase tracking-[0.22em] text-black/60">
+                        Tu sonrisa, nuestra especialidad
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="  mt-5 sm:mt-10 flex lg:col-span-2 w-full h-full justify-center items-center">
-                <div className=" block w-full">
-                  <div className=" mb-5 sm:mb-10 flex justify-center items-center">
-                    <h1 className=" text-2xl md:text-3xl text-center text-black font-bold">
+              <div className="flex items-center justify-center lg:col-span-3">
+                <div className="w-full max-w-2xl rounded-3xl border border-black/10 bg-white p-6 shadow-[0_20px_60px_rgba(0,0,0,0.18)] sm:p-9 lg:p-10">
+                  <div className="mb-8">
+                    <span className="text-xs font-bold uppercase tracking-[0.24em] text-[#9a7900]">
+                      Agenda tu consulta
+                    </span>
+                    <h1 className="mt-2 text-lg md:text-3xl font-bold tracking-tight text-[#171717] ">
                       Contáctanos
                     </h1>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-500 sm:text-base">
+                      Déjanos tus datos y nuestro equipo se comunicará contigo.
+                    </p>
                   </div>
 
-                  <div className=" flex justify-center items-center text-sm sm:text-base">
-                    <form className=" block">
-                      <label htmlFor="">
-                        <p className=" mb-2">Nombre</p>
+                  <div className="text-sm sm:text-base">
+                    <form className="w-full">
+                      <label
+                        htmlFor="contact-name"
+                        className="mb-2 block text-sm font-semibold text-gray-700"
+                      >
+                        Nombre completo
                       </label>
                       <input
+                        id="contact-name"
+                        name="name"
                         type="text"
-                        className=" rounded-md h-[40px] w-full px-5 font-semibold"
+                        placeholder="Ej. María González"
+                        className="h-12 w-full rounded-xl border border-gray-200 bg-[#faf9f5] px-4 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-[#c49d12] focus:bg-white focus:ring-4 focus:ring-[#d9b430]/15"
                       />
-                      <div className=" my-5 grid-cols-1 md:grid-cols-2 gap-5 grid">
+                      <div className="my-5 grid grid-cols-1 gap-5 md:grid-cols-2">
                         <div>
-                          <label htmlFor="">
-                            <p className=" mb-2">Email</p>
+                          <label
+                            htmlFor="contact-email"
+                            className="mb-2 block text-sm font-semibold text-gray-700"
+                          >
+                            Correo electrónico
                           </label>
                           <input
-                            className=" rounded-md h-[40px] w-full md:w-[290px] px-5 font-semibold"
+                            id="contact-email"
+                            name="email"
+                            className="h-12 w-full rounded-xl border border-gray-200 bg-[#faf9f5] px-4 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-[#c49d12] focus:bg-white focus:ring-4 focus:ring-[#d9b430]/15"
                             type="email"
+                            placeholder="correo@ejemplo.com"
                           />
                         </div>
                         <div>
-                          <label htmlFor="">
-                            <p className=" mb-2">Teléfono</p>
+                          <label
+                            htmlFor="contact-phone"
+                            className="mb-2 block text-sm font-semibold text-gray-700"
+                          >
+                            Teléfono
                           </label>
                           <input
-                            className=" rounded-md h-[40px] w-full md:w-[290px] px-5 font-semibold"
-                            type="text"
+                            id="contact-phone"
+                            name="phone"
+                            className="h-12 w-full rounded-xl border border-gray-200 bg-[#faf9f5] px-4 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-[#c49d12] focus:bg-white focus:ring-4 focus:ring-[#d9b430]/15"
+                            type="tel"
+                            placeholder="099 999 9999"
                           />
                         </div>
                       </div>
-                      <label htmlFor="">
-                        <p className=" mb-2">Mensaje</p>
+                      <label
+                        htmlFor="contact-message"
+                        className="mb-2 block text-sm font-semibold text-gray-700"
+                      >
+                        ¿Cómo podemos ayudarte?
                       </label>
                       <textarea
-                        className=" rounded-md p-5 h-[150px] font-semibold w-full"
-                        name=""
-                        id=""
+                        className="h-36 w-full rounded-xl border border-gray-200 bg-[#faf9f5] p-4 text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-[#c49d12] focus:bg-white focus:ring-4 focus:ring-[#d9b430]/15"
+                        name="message"
+                        id="contact-message"
+                        placeholder="Cuéntanos brevemente el motivo de tu consulta..."
                         style={{ resize: "none" }}
                       ></textarea>
-                      <div className=" my-5 flex justify-center items-center">
-                        <button className=" text-base font-semibold border-[1px] hover:shadow-md hover:shadow-black duration-300 border-black rounded-lg p-3 bg-white">
-                          <p>Contactar</p>
+                      <div className="mt-7">
+                        <button
+                          type="submit"
+                          className="flex w-full items-center justify-center gap-3 rounded-xl bg-[#171717] px-6 py-3.5 text-base font-bold text-white shadow-lg transition duration-300 hover:-translate-y-0.5 hover:bg-black hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-black/20"
+                        >
+                          <span>Enviar mensaje</span>
+                          <span aria-hidden="true">→</span>
                         </button>
+                        <p className="mt-3 text-center text-xs text-gray-400">
+                          Responderemos tu solicitud lo antes posible.
+                        </p>
                       </div>
                     </form>
                   </div>
